@@ -21,7 +21,6 @@ docker run -d --name=$name \
            -v $ASSETS/main.js:/usr/share/netdata/web/main.js:ro \
            -v $ASSETS/charts.d.conf:/etc/netdata/charts.d.conf:ro\
            -v $ASSETS/loopsleepms.sh.inc:/usr/lib/netdata/plugins.d/loopsleepms.sh.inc:ro\
-           -v $ASSETS/.opt-out-from-anonymous-statistics:/etc/netdata/.opt-out-from-anonymous-statistics:ro\
            --cap-add SYS_PTRACE \
            --security-opt apparmor=unconfined \
            --restart unless-stopped \
