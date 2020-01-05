@@ -34,6 +34,7 @@ Modifications are based on following sources:
    ```
    bash install.sh
    ```
+4. Open `http://YOUR.COREELEC.IP:19999` in your browser, enjoy!
    
  Executing this script will create new directory `netdata`, download all required files into it and execute `run_netdata.sh`.
  `run_netdata.sh` will stop and remove existing `netdata` docker containers and start new one with mounted config files.
